@@ -1,0 +1,8 @@
+Copyright (c) 2023 PicoLemon
+
+
+Other Licenses:
+
+The following files are licensed under BSD ( ecp5pll.ts )
+(c)EMARD
+License=BSD
