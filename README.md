@@ -1,7 +1,7 @@
 # PicoFabric IDE # 
 [![Install](https://img.shields.io/badge/VSCode-Extension-f3cd5a?longCache=true&style=flat-rounded)](https://github.com/picolemon/picofabric-ide)
-[![datasheet (pdf)](https://img.shields.io/badge/Data%20Sheet-PDF-f3cd5a?longCache=true&style=flat-rounded)](https://github.com/picolemon/picofabric-hardware/doc/datasheet.pdf)
-[![sch (pdf)](https://img.shields.io/badge/SCH-PDF-f3cd5a?longCache=true&style=flat-rounded)](https://github.com/picolemon/picofabric-hardware/doc/sch.pdf)
+[![datasheet (pdf)](https://img.shields.io/badge/Data%20Sheet-PDF-f3cd5a?longCache=true&style=flat-rounded)](https://github.com/picolemon/picofabric-hardware/blob/main/doc/datasheet.pdf)
+[![sch (pdf)](https://img.shields.io/badge/SCH-PDF-f3cd5a?longCache=true&style=flat-rounded)](https://github.com/picolemon/picofabric-hardware/blob/main/doc/sch.pdf)
 [![Store](https://img.shields.io/badge/Store-PicoLemon-f3cd5a?longCache=true&style=flat-rounded)](http://picolemon.com/board/PICOFABRIC)
 [![Examples](https://img.shields.io/badge/Code-Examples-f3cd5a?longCache=true&style=flat-rounded)](https://github.com/picolemon/picofabric-examples)
 [![Discord](https://img.shields.io/badge/@-Discord-f3cd5a?longCache=true&style=flat-rounded)](https://discord.gg/Be3yFCzyrp)
@@ -203,9 +203,9 @@ The PicoFabric IDE provides a built in programmer for the PicoFabric development
 - UF2 Bootloader images for Pico programmer device.
 - USB bitstream programmer.
 - Run a precompiled test blinky on the device to verify basic functionality.
-- program.py CLI programmer is provided in the extension resources directory or can be downloaded from [here](https://github.com/picolemon/picofabric-hardware/programmer/fabricSerialProgrammer).
+- program.py CLI programmer is provided in the extension resources directory or can be downloaded from [here](https://github.com/picolemon/picofabric-hardware/tree/main/programmer/fabricSerialProgrammer).
 
-The [MicroPython library](https://github.com/picolemon/picofabric-micropython) and [C/C++ library](https://github.com/picolemon/picofabric-c) provides a programmer for integration. This allows programming the device from code eg. the [Micro Python examples](https://github.com/picolemon/picofabric-examples/micropython) uses this feature to upload a bitstream before interacting with the FPGA.
+The [MicroPython library](https://github.com/picolemon/picofabric-micropython) and [C/C++ library](https://github.com/picolemon/picofabric-c) provides a programmer for integration. This allows programming the device from code eg. the [Micro Python examples](https://github.com/picolemon/picofabric-examples/tree/main/micropython) uses this feature to upload a bitstream before interacting with the FPGA.
 
 #### Programming commands ####
 
