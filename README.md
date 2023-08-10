@@ -238,9 +238,27 @@ The PicoFabric IDE provides a minimal VCD viewer for inspecting register, vector
 
 #### Opening VCD files ####
 
-![Show me](doc/images/vcd_open.gif)
-Select a VCD file or drag one from explorer, VSCode will open files matching the .vcd extension into a new tab.
+![Show me](https://github.com/picolemon/picofabric-ide/raw/main/doc/images/vcd_open.gif)
+Select a VCD file or drag one from explorer, VSCode will open files matching the .vcd extension into a new tab. The built-in VCD viewer should only be used for small simulation as memory/functionality is limited by the Visual studio code webview.
 <br /><br />
+
+## Opening GTKwave after the simulation runs
+
+To setup gtkwave as the default VCD viewer you can do the following:
+
+```
+(Ctrl + Shift + P) -> Preferences: Open Workspace Settings
+```
+
+Filter settings using the "vcdViewer" keyword and change the following settings to eg.
+
+fabric-ide.vcd.defaultVCDViewerShellCommand : ```"C:\localPrograms\gtkwave-3.3.99-bin-win64\gtkwave64\bin\gtkwave.exe" "{gtkwavePrefsFilename}"```
+
+fabric-ide.vcd.defaultVCDViewer : ```gtkwave```
+
+fabric-ide.vcd.defaultGHDLOutputFilename : ```out.ghw``` Note this must be to .ghw format as an out.ghw.gtkw file will be automatically created to keep the gtkwave session state, just remember to save before closing gtkwave after adding your signals etc.
+
+Projects can also define which vcdView using the ```vcdViewer``` property to override the ```fabric-ide.vcd.defaultVCDViewer``` set by the workspace.
 
 #### Known issues
 - The built-in VCD viewer doesn't handle large VCD files. gtkwave should be used for more complex simulations.
